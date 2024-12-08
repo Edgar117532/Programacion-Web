@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root"></div> <!-- React app will mount here -->
+    <header>
+        <h1>Pokédex Interactiva</h1>
+        <input type="text" id="search-box" placeholder="Buscar Pokémon..." oninput="searchPokemon(this.value)">
+        <label for="display-mode">Modo de imagen:</label>
+        <select id="display-mode" onchange="changeDisplayMode(this.value)">
+            <option value="modern">Moderno</option>
+            <option value="gameboy">Gameboy</option>
+            <option value="cartoon">Caricatura</option>
+        </select>
+        <button onclick="viewFavorites()">Ver Favoritos</button>
+    </header>
+
+    <main>
+        <section>
+            <label for="type-filter">Filtrar por tipo:</label>
+            <select id="type-filter" onchange="filterByType(this.value)">
+                <option value="">Todos</option>
+            </select>
+        </section>
+
+        <section id="pokemon-list-container">
+            <div id="pokemon-list"></div>
+        </section>
+
+        <section id="pagination" class="pagination-controls"></section>
+
+        <div id="pokemon-details-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="pokemon-details"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
