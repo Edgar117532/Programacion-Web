@@ -67,4 +67,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) En este proyecto se realiza una vista de lo que serie una poquedex interactiva en el cual aparecen un total de 1000 pokemoenes, estos organizados entre sus clases, teneido modos para cambiar de ver los pokemones, ademas de funcion de favoritos de los pokemones y su despliegue, todo esto mediante el react y colocado en este directorio git hub.
